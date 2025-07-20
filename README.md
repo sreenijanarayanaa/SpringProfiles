@@ -52,13 +52,13 @@ public class ProfilesController {
 }
 ```
 **=> Create Profile-Specific Configs:**
-_application-dev.properties_
+- _application-dev.properties_
 ```java
 server.port=8081
 spring.application.name=SpringProfileExample for Dev env
 my.prop=Dev Value
 ```
-_application-test.properties_
+- _application-test.properties_
 ```java
 server.port=8082
 spring.application.name=SpringProfileExample for Test env
@@ -75,7 +75,7 @@ Access the app at _http://localhost:8081/_ (if dev is active)
 Switch between profiles by changing spring.profiles.active
 
 **🧪 Testing**
-Change the active profile to test and access http://localhost:8082/ to verify behavior.
+Change the active profile to test and access _http://localhost:8082/_ to verify behavior.
 
 **📌 Notes**
 If no profile is specified, Spring Boot uses the default configuration.
